@@ -4,13 +4,15 @@ Stormworks Realtime Illegal Property Editor
 
 A thing I made because I got tired of editing XML.
 
-SWRIPE runs inside Stormworks and lets you edit component properties directly while the game is running.
+SWRIPE lets you edit component properties beyond the limits normally allowed by Stormworks.
 
-It was originally made for wheels, but it turns out the same capture system works on a lot of other components too.
+Normally, changing illegal values means opening the vehicle XML, changing the value manually, saving it, and reloading the vehicle.
 
-If a property is stored as a float, SWRIPE can often find it and let you change it.
+SWRIPE does it directly in game.
 
-Things I've tested so far:
+Select a component, click the property you want to edit, and SWRIPE will try to capture the memory address Stormworks uses for that property. Once captured, the value can be viewed and edited from the overlay.
+
+Things I have tested so far:
 
 - Wheels
 - Suspension wheels
@@ -20,16 +22,8 @@ Things I've tested so far:
 
 Probably other stuff too.
 
-## Warning
+No XML editing.
+No vehicle reloading.
+No Cheat Engine.
 
-SWRIPE uses DLL injection and memory editing.
-
-Windows Defender and other antivirus software may complain about it.
-
-Windows Defender actually quarantined the injector during development, which was a fun way to discover I'd accidentally made something that behaves exactly like malware from an antivirus point of view. 😅
-
-If you have concerns, the source code is available to inspect and build from. 🙂
-
-## Disclaimer
-
-Not affiliated with Stormworks or Geometa.
+Just select something and make the number cursed.
