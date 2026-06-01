@@ -6,11 +6,11 @@ A thing I made because I got tired of editing XML.
 
 SWRIPE lets you change component properties beyond the limits normally allowed by Stormworks without editing vehicle XML files.
 
-Enable Capture Mode, select a component with the normal Stormworks select tool, and SWRIPE will attempt to capture the properties being accessed by Stormworks.
+Enable Capture Mode, select a component with the normal Stormworks select tool and SWRIPE will attempt to capture the properties being accessed by Stormworks.
 
 Once captured, the values can be viewed and modified directly from the overlay.
 
-Changes can be applied instantly or manually.
+Changes can be be applied instantly or manually. 👍
 
 If you need to inspect or continue editing an already modified component, enable Prevent Stormworks Property Writes to stop Stormworks from clamping values back to legal ranges while the component is selected.
 
@@ -26,19 +26,19 @@ If you need to inspect or continue editing an already modified component, enable
    - The +/- buttons
    - Left/Right arrow keys to select a property
    - Up/Down arrow keys to change the selected value
-7. Enable Instant Update to apply changes immediately, or click Apply to Selected Component.
+7. Enable Instant Update to apply changes immediately or click Apply to Selected Component.
 
 Once a component has been captured, you can usually deselect it and continue editing the captured values.
 
 If you want to inspect or edit a component while it is still selected, enable Prevent Stormworks Property Writes first. Otherwise Stormworks will overwrite and clamp values while the component remains selected.
 
-If things start behaving strangely, try spamming Clear Selection and selecting the component again.
+If things start behaving strangely, try spamming Clear Selection and selecting the component again 😄
 
 ## Prevent Stormworks Property Writes
 
 This option prevents Stormworks from writing property values back to the selected component.
 
-Normally, Stormworks updates component properties while the component is selected. This can cause illegal values to be overwritten or clamped back into the normal editor limits.
+Normally Stormworks updates component properties while the component is selected. This will cause illegal values to be overwritten or clamped back into the normal editor limits.
 
 When Prevent Stormworks Property Writes is enabled:
 
@@ -49,13 +49,13 @@ When Prevent Stormworks Property Writes is enabled:
 
 In most cases you only need this when reading or editing a component that is currently selected.
 
-If the component is no longer selected, it usually isn't necessary.
+If the component is no longer selected it usually isn't necessary.
 
 ## Technical Details
 
-SWRIPE does not use fixed addresses, XML parsing, or Cheat Engine scans.
+SWRIPE does not use fixed addresses, XML parsing or Cheat Engine scans.
 
-Instead, it watches a Stormworks property write instruction and captures the memory addresses being used by the game when a component property is selected.
+Instead it watches a Stormworks property write instruction and captures the memory addresses being used by the game when a component property is selected.
 
 The captured addresses are then used to read and write values directly from memory.
 
@@ -73,7 +73,7 @@ Things I've tested so far:
 - Rotors
 - Solid rockets
 
-Probably other stuff too.
+Probably other stuff too 🙂
 
 ## Antivirus Warnings
 
@@ -86,9 +86,9 @@ The injector uses APIs such as:
 - WriteProcessMemory
 - CreateRemoteThread
 
-These are commonly used by debuggers, trainers, and unfortunately malware, so some antivirus products may complain.
+These are commonly used by debuggers, trainers and unfortunately malware, so some antivirus products may complain.
 
-Windows Defender actually quarantined the injector during development, which was a fun way to discover I'd accidentally made something that behaves exactly like malware from an antivirus point of view. 😅
+Windows Defender actually quarantined the injector during development, which was a fun way to discover I'd accidentally made something that behaves exactly like malware from an antivirus point of view 😅
 
 If you have concerns, the source code is available to inspect and build from. 🙂
 
