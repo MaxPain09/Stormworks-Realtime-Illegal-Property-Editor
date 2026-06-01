@@ -4,6 +4,10 @@ Stormworks Realtime Illegal Property Editor
 
 A thing I made because I got tired of editing XML.
 
+## Screenshot
+
+![SWRIPE Screenshot](screenshot.png)
+
 SWRIPE lets you change component properties beyond the limits normally allowed by Stormworks without editing vehicle XML files.
 
 Enable Capture Mode, select a component with the normal Stormworks select tool and SWRIPE will attempt to capture the properties being accessed by Stormworks.
