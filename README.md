@@ -30,7 +30,7 @@ If you need to inspect or continue editing an already modified component, enable
 
 Once a component has been captured, you can usually deselect it and continue editing the captured values.
 
-If you want to inspect or edit a component while it is still selected, enable Prevent Stormworks Property Writes first. Otherwise Stormworks may overwrite or clamp values while the component remains selected.
+If you want to inspect or edit a component while it is still selected, enable Prevent Stormworks Property Writes first. Otherwise Stormworks will overwrite and clamp values while the component remains selected.
 
 If things start behaving strangely, try spamming Clear Selection and selecting the component again.
 
