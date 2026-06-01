@@ -20,14 +20,17 @@ If you need to inspect or continue editing an already modified component, enable
 2. Run the injector.
 3. Enable Capture Mode (F2).
 4. Select a component using the normal Stormworks select tool.
-5. Click one of the component's properties.
-6. SWRIPE will attempt to capture the property addresses and read their current values.
-7. Edit values using:
+5. SWRIPE will attempt to capture the property addresses and read their current values.
+6. Edit values using:
    - The number input boxes
    - The +/- buttons
    - Left/Right arrow keys to select a property
    - Up/Down arrow keys to change the selected value
-8. Enable Instant Update to apply changes immediately, or click Apply to Selected Component.
+7. Enable Instant Update to apply changes immediately, or click Apply to Selected Component.
+
+Once a component has been captured, you can usually deselect it and continue editing the captured values.
+
+If you want to inspect or edit a component while it is still selected, enable Prevent Stormworks Property Writes first. Otherwise Stormworks may overwrite or clamp values while the component remains selected.
 
 If things start behaving strangely, try spamming Clear Selection and selecting the component again.
 
@@ -35,16 +38,18 @@ If things start behaving strangely, try spamming Clear Selection and selecting t
 
 This option prevents Stormworks from writing property values back to the selected component.
 
-This is mainly useful when working with illegal values.
-
-Normally, selecting a modified component may cause Stormworks to clamp values back into the normal editor limits.
+Normally, Stormworks updates component properties while the component is selected. This can cause illegal values to be overwritten or clamped back into the normal editor limits.
 
 When Prevent Stormworks Property Writes is enabled:
 
 - Illegal values remain unchanged
 - Existing illegal values can be inspected
-- Existing illegal values can be edited further
+- Existing illegal values can be edited while the component is selected
 - Stormworks property sliders stop working while the option is enabled
+
+In most cases you only need this when reading or editing a component that is currently selected.
+
+If the component is no longer selected, it usually isn't necessary.
 
 ## Technical Details
 
