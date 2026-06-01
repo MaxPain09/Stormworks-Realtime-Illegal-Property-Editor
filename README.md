@@ -38,6 +38,8 @@ Once captured, the values can be viewed and modified directly from the overlay.
 
 Changes can be applied instantly or manually.
 
+Selecting another component will automatically start a new capture.
+
 If you need to inspect or continue editing an already modified component, enable Prevent Stormworks Property Writes to stop Stormworks from clamping values back to legal ranges while the component is selected.
 
 ## How To Use
@@ -55,7 +57,7 @@ If you need to inspect or continue editing an already modified component, enable
    - Up/Down arrow keys to select a property
 8. Enable Instant Update to apply changes immediately or click Apply to Selected Component.
 
-Once a component has been captured, you can usually deselect it and continue editing the captured values.
+Once a component has been captured, you can deselect it and continue editing the captured values.
 
 If you want to inspect or edit a component while it is still selected, enable Prevent Stormworks Property Writes first. Otherwise Stormworks will overwrite and clamp values while the component remains selected.
 
@@ -103,8 +105,6 @@ For example:
 |----------------|---------------------|
 | Property 1 | Burn Rate |
 | Property 2 | Fuel Amount |
-
-The easiest way to identify a property is usually to change it slightly and see what happens.
 
 ## Prevent Stormworks Property Writes
 
