@@ -44,15 +44,16 @@ If you need to inspect or continue editing an already modified component, enable
 
 1. Start Stormworks.
 2. Run the injector.
-3. Enable Capture Mode (F2).
-4. Select a component using the normal Stormworks select tool.
-5. SWRIPE will attempt to capture the property addresses and read their current values.
-6. Edit values using:
+3. A window called SWRIPE should appear, its visibility can be toggled with INSERT.
+4. Enable Capture Mode (F2).
+5. Select a component using the normal Stormworks select tool.
+6. SWRIPE will attempt to capture the property addresses and read their current values.
+7. Edit values using:
    - The number input boxes
    - The +/- buttons
    - Left/Right arrow keys to change the selected value
    - Up/Down arrow keys to select a property
-7. Enable Instant Update to apply changes immediately or click Apply to Selected Component.
+8. Enable Instant Update to apply changes immediately or click Apply to Selected Component.
 
 Once a component has been captured, you can usually deselect it and continue editing the captured values.
 
