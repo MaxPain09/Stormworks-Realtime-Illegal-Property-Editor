@@ -36,7 +36,7 @@ Enable Capture Mode, select a component with the normal Stormworks select tool a
 
 Once captured, the values can be viewed and modified directly from the overlay.
 
-Changes can be be applied instantly or manually.
+Changes can be applied instantly or manually.
 
 If you need to inspect or continue editing an already modified component, enable Prevent Stormworks Property Writes to stop Stormworks from clamping values back to legal ranges while the component is selected.
 
