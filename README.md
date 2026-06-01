@@ -18,6 +18,27 @@ Changes can be be applied instantly or manually.
 
 If you need to inspect or continue editing an already modified component, enable Prevent Stormworks Property Writes to stop Stormworks from clamping values back to legal ranges while the component is selected.
 
+## READ THIS FIRST
+
+SWRIPE uses DLL injection, hardware breakpoints, vectored exception handlers and direct memory modification.
+
+There is no official Stormworks modding API for this, so the tool works by hooking into the running game and reading or writing component properties directly from memory.
+
+Because of how it works:
+
+- Crashes are possible
+- Game updates may break functionality
+- Antivirus software may complain
+- Injecting or ejecting the DLL are the most likely times for something to go wrong
+
+If you're working on something important, save often.
+
+SWRIPE does not modify any Stormworks files on disk.
+Closing Stormworks removes all changes made by SWRIPE.
+You must run the injector again after restarting the game.
+
+Only supports the 64 bit Windows version of Stormworks (stormworks64.exe).
+
 ## How To Use
 
 1. Start Stormworks.
@@ -128,7 +149,7 @@ Probably other stuff too.
 
 ## Antivirus Warnings
 
-SWRIPE uses DLL injection and memory modification.
+SWRIPE uses techniques commonly used by debuggers, trainers and malware.
 
 The injector uses APIs such as:
 
@@ -137,7 +158,15 @@ The injector uses APIs such as:
 - WriteProcessMemory
 - CreateRemoteThread
 
-These are commonly used by debuggers, trainers and even malware, so some antivirus products may complain.
+The DLL uses:
+
+- Hardware breakpoints
+- Vectored exception handlers
+- Direct memory reads and writes
+
+Because of this some antivirus products may flag SWRIPE as suspicious.
+
+Official releases are built from the source code available in this repository.
 
 If you have concerns, the source code is available to inspect and build from.
 
