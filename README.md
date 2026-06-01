@@ -24,8 +24,8 @@ If you need to inspect or continue editing an already modified component, enable
 6. Edit values using:
    - The number input boxes
    - The +/- buttons
-   - Left/Right arrow keys to select a property
-   - Up/Down arrow keys to change the selected value
+   - Left/Right arrow keys to change the selected value
+   - Up/Down arrow keys to select a property
 7. Enable Instant Update to apply changes immediately or click Apply to Selected Component.
 
 Once a component has been captured, you can usually deselect it and continue editing the captured values.
