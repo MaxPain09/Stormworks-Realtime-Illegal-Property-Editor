@@ -26,7 +26,7 @@ You must run the injector again after restarting the game.
 Only supports the 64 bit Windows version of Stormworks (stormworks64.exe).
 Game updates may require SWRIPE to be updated before it works again.
 
-## Screenshot
+## Basic Info
 
 ![SWRIPE Screenshot](screenshot.png)
 
