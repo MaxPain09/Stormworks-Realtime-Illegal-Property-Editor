@@ -10,7 +10,7 @@ Enable Capture Mode, select a component with the normal Stormworks select tool a
 
 Once captured, the values can be viewed and modified directly from the overlay.
 
-Changes can be be applied instantly or manually. 👍
+Changes can be be applied instantly or manually.
 
 If you need to inspect or continue editing an already modified component, enable Prevent Stormworks Property Writes to stop Stormworks from clamping values back to legal ranges while the component is selected.
 
@@ -32,7 +32,7 @@ Once a component has been captured, you can usually deselect it and continue edi
 
 If you want to inspect or edit a component while it is still selected, enable Prevent Stormworks Property Writes first. Otherwise Stormworks will overwrite and clamp values while the component remains selected.
 
-If things start behaving strangely, try spamming Clear Selection and selecting the component again 😄
+If things start behaving strangely, try spamming Clear Selection and selecting the component again
 
 ## Prevent Stormworks Property Writes
 
@@ -73,7 +73,7 @@ Things I've tested so far:
 - Rotors
 - Solid rockets
 
-Probably other stuff too 🙂
+Probably other stuff too
 
 ## Antivirus Warnings
 
@@ -86,11 +86,9 @@ The injector uses APIs such as:
 - WriteProcessMemory
 - CreateRemoteThread
 
-These are commonly used by debuggers, trainers and unfortunately malware, so some antivirus products may complain.
+These are commonly used by debuggers, trainers and even malware, so some antivirus products may complain.
 
-Windows Defender actually quarantined the injector during development, which was a fun way to discover I'd accidentally made something that behaves exactly like malware from an antivirus point of view 😅
-
-If you have concerns, the source code is available to inspect and build from. 🙂
+If you have concerns, the source code is available to inspect and build from.
 
 ## Disclaimer
 
