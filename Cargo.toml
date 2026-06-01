@@ -1,0 +1,24 @@
+[package]
+name = "swripe"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+hudhook = { path = "../hudhook" }
+winapi = { version = "0.3", features = [
+    "winuser", 
+	"winbase",
+    "memoryapi", 
+    "processthreadsapi", 
+    "errhandlingapi", 
+    "handleapi", 
+    "synchapi", 
+    "tlhelp32", 
+    "debugapi",
+    "utilapiset",
+    "libloaderapi"
+] }
+lazy_static = "1.4"
