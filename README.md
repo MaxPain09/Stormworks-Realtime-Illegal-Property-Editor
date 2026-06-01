@@ -4,20 +4,6 @@ Stormworks Realtime Illegal Property Editor
 
 A thing I made because I got tired of editing XML.
 
-## Screenshot
-
-![SWRIPE Screenshot](screenshot.png)
-
-SWRIPE lets you change component properties beyond the limits normally allowed by Stormworks without editing vehicle XML files.
-
-Enable Capture Mode, select a component with the normal Stormworks select tool and SWRIPE will attempt to capture the properties being accessed by Stormworks.
-
-Once captured, the values can be viewed and modified directly from the overlay.
-
-Changes can be be applied instantly or manually.
-
-If you need to inspect or continue editing an already modified component, enable Prevent Stormworks Property Writes to stop Stormworks from clamping values back to legal ranges while the component is selected.
-
 ## READ THIS FIRST
 
 SWRIPE uses DLL injection, hardware breakpoints, vectored exception handlers and direct memory modification.
@@ -38,6 +24,21 @@ Closing Stormworks removes all changes made by SWRIPE.
 You must run the injector again after restarting the game.
 
 Only supports the 64 bit Windows version of Stormworks (stormworks64.exe).
+Game updates may require SWRIPE to be updated before it works again.
+
+## Screenshot
+
+![SWRIPE Screenshot](screenshot.png)
+
+SWRIPE lets you change component properties beyond the limits normally allowed by Stormworks without editing vehicle XML files.
+
+Enable Capture Mode, select a component with the normal Stormworks select tool and SWRIPE will attempt to capture the properties being accessed by Stormworks.
+
+Once captured, the values can be viewed and modified directly from the overlay.
+
+Changes can be be applied instantly or manually.
+
+If you need to inspect or continue editing an already modified component, enable Prevent Stormworks Property Writes to stop Stormworks from clamping values back to legal ranges while the component is selected.
 
 ## How To Use
 
@@ -129,7 +130,7 @@ Instead it watches a Stormworks property write instruction and captures the memo
 
 The captured addresses are then used to read and write values directly from memory.
 
-Property order in SWRIPE matches the order Stormworks accesses those properties for the selected component.
+Property order in SWRIPE matches the order Stormworks exposes those properties when a component is selected.
 
 Because of how the capture system works, SWRIPE currently only works with float based properties.
 
