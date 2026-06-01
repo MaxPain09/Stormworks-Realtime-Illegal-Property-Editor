@@ -34,6 +34,51 @@ If you want to inspect or edit a component while it is still selected, enable Pr
 
 If things start behaving strangely, try spamming Clear Selection and selecting the component again
 
+## Property Order
+
+SWRIPE displays properties in the same order Stormworks exposes them when a component is selected.
+
+The labels shown in SWRIPE are examples based on common components and are intended as a guide rather than an exact description of every component.
+
+Some common mappings are:
+
+| Property | Examples |
+|-----------|-----------|
+| Property 1 | Stiffness, Rotor Size, Rocket Burn Rate, Grip |
+| Property 2 | Damping, Rocket Fuel Amount, Radius |
+| Property 3 | Grip, Pressure |
+| Property 4 | Radius |
+| Property 5 | Pressure |
+
+For example:
+
+### Normal Wheel
+
+| SWRIPE Property | Stormworks Property |
+|----------------|---------------------|
+| Property 1 | Grip |
+| Property 2 | Radius |
+| Property 3 | Pressure |
+
+### Suspension Wheel
+
+| SWRIPE Property | Stormworks Property |
+|----------------|---------------------|
+| Property 1 | Stiffness |
+| Property 2 | Damping |
+| Property 3 | Grip |
+| Property 4 | Radius |
+| Property 5 | Pressure |
+
+### Solid Rocket Booster
+
+| SWRIPE Property | Stormworks Property |
+|----------------|---------------------|
+| Property 1 | Burn Rate |
+| Property 2 | Fuel Amount |
+
+The easiest way to identify a property is usually to change it slightly and see what happens.
+
 ## Prevent Stormworks Property Writes
 
 This option prevents Stormworks from writing property values back to the selected component.
@@ -59,6 +104,8 @@ Instead it watches a Stormworks property write instruction and captures the memo
 
 The captured addresses are then used to read and write values directly from memory.
 
+Property order in SWRIPE matches the order Stormworks accesses those properties for the selected component.
+
 Because of how the capture system works, SWRIPE currently only works with float based properties.
 
 A good rule of thumb is:
@@ -73,7 +120,7 @@ Things I've tested so far:
 - Rotors
 - Solid rockets
 
-Probably other stuff too
+Probably other stuff too.
 
 ## Antivirus Warnings
 
