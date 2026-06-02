@@ -26,6 +26,8 @@ You must run the injector again after restarting the game.
 Only supports the 64 bit Windows version of Stormworks (stormworks64.exe).
 If the instruction offset changes in a game update, i will have to update it.
 
+It will only detect properties that is a slider, and is already accesible ingame, not hidden values.
+
 ## Basic Info
 
 ![SWRIPE Screenshot](screenshot.png)
