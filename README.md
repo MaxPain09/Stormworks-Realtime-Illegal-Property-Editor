@@ -2,29 +2,29 @@
 
 Stormworks Realtime Illegal Property Editor
 
-A thing I made because I got tired of editing XML.
+A thing I made because I got tired of editing XML (and because why not).
 
 ## READ THIS FIRST
 
 SWRIPE uses DLL injection, hardware breakpoints, vectored exception handlers and direct memory modification.
 
-There is no official Stormworks modding API for this, so the tool works by hooking into the running game and reading or writing component properties directly from memory.
+The tool works by hooking into the running game and reading or writing component properties directly from memory.
 
 Because of how it works:
 
 - Crashes are possible
 - Game updates may break functionality
-- Antivirus software may complain
+- Antivirus software may(will) complain
 - Injecting or ejecting the DLL are the most likely times for something to go wrong
 
-If you're working on something important, save often.
+So don't forget to save often
 
 SWRIPE does not modify any Stormworks files on disk.
 Closing Stormworks removes all changes made by SWRIPE.
 You must run the injector again after restarting the game.
 
 Only supports the 64 bit Windows version of Stormworks (stormworks64.exe).
-Game updates may require SWRIPE to be updated before it works again.
+If the instruction offset changes in a game update, i will have to update it.
 
 ## Basic Info
 
@@ -61,13 +61,13 @@ Once a component has been captured, you can deselect it and continue editing the
 
 If you want to inspect or edit a component while it is still selected, enable Prevent Stormworks Property Writes first. Otherwise Stormworks will overwrite and clamp values while the component remains selected.
 
-If things start behaving strangely, try spamming Clear Selection and selecting the component again
+If things start behaving strangely, try spamming Clear Selection and selecting the component again lol
 
 ## Property Order
 
-SWRIPE displays properties in the same order Stormworks exposes them when a component is selected.
+The displays properties will almost always from what i know, be in the same order Stormworks exposes them when a component is selected.
 
-The labels shown in SWRIPE are examples based on common components and are intended as a guide rather than an exact description of every component.
+So the labels shown are examples based on common components and are intended as a guide rather than an exact description of every component.
 
 Some common mappings are:
 
@@ -110,7 +110,7 @@ For example:
 
 This option prevents Stormworks from writing property values back to the selected component.
 
-Normally Stormworks updates component properties while the component is selected. This will cause illegal values to be overwritten or clamped back into the normal editor limits.
+Stormworks constantly updates component properties while the component is selected. This will cause illegal values to be overwritten and clamped back into the normal editor limits.
 
 When Prevent Stormworks Property Writes is enabled:
 
@@ -125,29 +125,13 @@ If the component is no longer selected it usually isn't necessary.
 
 ## Technical Details
 
-SWRIPE does not use fixed addresses, XML parsing or Cheat Engine scans.
-
-Instead it watches a Stormworks property write instruction and captures the memory addresses being used by the game when a component property is selected.
+It watches a Stormworks property write instruction and captures the memory addresses being used by the game when a component property is selected.
 
 The captured addresses are then used to read and write values directly from memory.
 
 Property order in SWRIPE matches the order Stormworks exposes those properties when a component is selected.
 
 Because of how the capture system works, SWRIPE currently only works with float based properties.
-
-A good rule of thumb is:
-
-> If the property has a slider in Stormworks, SWRIPE will probably be able to capture it.
-
-Things I've tested so far:
-
-- Wheels
-- Suspension wheels
-- Pivots
-- Rotors
-- Solid rockets
-
-Probably other stuff too.
 
 ## Antivirus Warnings
 
@@ -168,9 +152,11 @@ The DLL uses:
 
 Because of this some antivirus products may flag SWRIPE as suspicious.
 
+You may need to add the SWRIPE folder as an exception to your antivirus.
+
 Official releases are built from the source code available in this repository.
 
-If you have concerns, the source code is available to inspect and build from.
+So if you have concerns, you can build from that.
 
 ## Disclaimer
 
