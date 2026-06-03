@@ -131,9 +131,9 @@ It watches a Stormworks property write instruction and captures the memory addre
 
 The captured addresses are then used to read and write values directly from memory.
 
-Property order in SWRIPE matches the order Stormworks exposes those properties when a component is selected.
+Property order matches the order Stormworks exposes those properties when a component is selected.
 
-Because of how the capture system works, SWRIPE currently only works with float based properties.
+Because of how the capture system works, it currently only works with float based properties.
 
 ## Antivirus Warnings
 
@@ -152,7 +152,7 @@ The DLL uses:
 - Vectored exception handlers
 - Direct memory reads and writes
 
-Because of this some antivirus products may flag SWRIPE as suspicious.
+Because of this some antivirus products may flag it as suspicious.
 
 You may need to add the SWRIPE folder as an exception to your antivirus.
 
