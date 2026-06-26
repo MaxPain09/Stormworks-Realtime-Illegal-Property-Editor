@@ -32,7 +32,7 @@ use winapi::um::winnt::{
 };
 
 // constants
-const OFFSET: usize = 0x2DDDF2;
+const OFFSET: usize = 0x2DDF52;
 const EXCEPTION_SINGLE_STEP: DWORD = 0x80000004;
 const EXCEPTION_CONTINUE_EXECUTION: i32 = -1;
 const EXCEPTION_CONTINUE_SEARCH: i32 = 0;
